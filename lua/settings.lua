@@ -45,7 +45,7 @@ bo.fileencoding= 'utf-8'
 ------- Commands ------- 
 
 -- corlorscheme
-vim.cmd('colorscheme material');
+vim.cmd('colorscheme nvcode');
 
 -- highlight the current cursor line
 vim.api.nvim_exec([[

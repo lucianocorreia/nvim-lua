@@ -11,8 +11,8 @@ end
 return require('packer').startup(function()
     -- Packer can manage itself as an optional plugin
     use { 'wbthomason/packer.nvim', opt = true }
-    
-	use { 'kaicataldo/material.vim', branch = 'main' }
+
+	use 'christianchiarulli/nvcode-color-schemes.vim'
 
     -- use 'kyazdani42/nvim-web-devicons' -- icons 
     use 'kyazdani42/nvim-tree.lua' -- tree
