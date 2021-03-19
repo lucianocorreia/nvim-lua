@@ -10,7 +10,9 @@ end
 
 return require('packer').startup(function()
     -- Packer can manage itself as an optional plugin
-    use {'wbthomason/packer.nvim', opt = true}
+    use { 'kaicataldo/material.vim', branch = 'main' }
+
+    use { 'wbthomason/packer.nvim', opt = true }
     use 'kyazdani42/nvim-web-devicons' -- icons 
     use 'kyazdani42/nvim-tree.lua' -- tree
     use 'neovim/nvim-lspconfig'
@@ -21,6 +23,8 @@ return require('packer').startup(function()
     use { 'glepnir/galaxyline.nvim', branch = 'main', config = function() require'my_statusline' end }
 
     use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } }
+
+    use 'norcalli/nvim-colorizer.lua'
 
 end)
 
