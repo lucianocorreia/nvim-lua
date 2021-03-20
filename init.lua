@@ -10,6 +10,8 @@ require('nv-bufferline')
 require('nv-nvimtree')
 require('nv-treesitter')
 require('nv-gitsigns')
+require('nv-autopairs')
+require('nv-telescope')
 
 -- LSP
 
