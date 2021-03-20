@@ -12,6 +12,7 @@ require('nv-treesitter')
 require('nv-gitsigns')
 require('nv-autopairs')
 require('nv-telescope')
+require('nv-lualine')
 
 -- LSP
 

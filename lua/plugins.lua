@@ -26,7 +26,7 @@ return require('packer').startup(function()
 
 	use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
 
-    --use { 'glepnir/galaxyline.nvim', branch = 'main', config = function() require'my_statusline' end }
+ 	use { 'hoob3rt/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } } 
 
     use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } }
 
