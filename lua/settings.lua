@@ -26,7 +26,7 @@ o.background = 'dark'
 o.termguicolors = true
 o.clipboard='unnamedplus'
 o.undodir = '~/.config/nvim/undodir'
-o.cmdheight = 1
+o.cmdheight = 2
 
 -- window-local options
 wo.number = true
