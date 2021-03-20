@@ -13,8 +13,11 @@ require('nv-gitsigns')
 require('nv-autopairs')
 require('nv-telescope')
 require('nv-lualine')
+require('nv-kommentary')
 
 -- LSP
-
-
+require('nv-lspconfig')
+-- require('nv-completion')
+--[[ require('lsp.ts-server')
+require('lsp.go-gopls') ]]
 

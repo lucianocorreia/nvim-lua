@@ -13,24 +13,22 @@ return require('packer').startup(function()
     use { 'wbthomason/packer.nvim', opt = true }
 
 	use 'christianchiarulli/nvcode-color-schemes.vim'
+    use 'norcalli/nvim-colorizer.lua'
 
 	use 'windwp/nvim-autopairs'
     use 'kyazdani42/nvim-web-devicons' -- icons 
     use 'kyazdani42/nvim-tree.lua' -- tree
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/nvim-compe'
+	use 'nvim-lua/completion-nvim'
     use 'hrsh7th/vim-vsnip'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-
 	use { 'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons' }
-
 	use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-
  	use { 'hoob3rt/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } } 
-
     use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } }
-
-    use 'norcalli/nvim-colorizer.lua'
+	use 'b3nj5m1n/kommentary'
+	use 'mhinz/vim-startify'
 
 end)
 

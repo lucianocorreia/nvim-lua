@@ -32,7 +32,7 @@ o.cmdheight = 2
 wo.number = true
 wo.relativenumber = true
 wo.wrap = false
-wo.signcolumn = 'number'
+wo.signcolumn = 'yes'
 wo.scrolloff = 15
 
 -- buffer options
@@ -45,7 +45,7 @@ bo.fileencoding= 'utf-8'
 ------- Commands ------- 
 
 -- corlorscheme
-vim.cmd('colorscheme onedark');
+vim.cmd('colorscheme nvcode');
 
 -- highlight the current cursor line
 vim.api.nvim_exec([[

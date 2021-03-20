@@ -32,9 +32,17 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
+  ["completion-nvim"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/completion-nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
+  },
+  kommentary = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/kommentary"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -92,6 +100,10 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/vim-startify"
   },
   ["vim-vsnip"] = {
     loaded = true,
