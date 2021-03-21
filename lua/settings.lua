@@ -5,13 +5,14 @@ local bo = vim.bo
 -- global options
 o.tabstop = 4
 o.shiftwidth = 4
-o.hlsearch = false
+o.hlsearch = true 
 o.foldlevelstart = 4 -- auto code folding when openeing new file at level 1
 o.mouse = 'a'
 o.backup = false
 o.writebackup = false 
 o.swapfile = false
-o.updatetime = 300
+o.updatetime=300                      --Faster completion
+--o.timeoutlen=100
 o.shortmess = vim.o.shortmess .. 'c'
 o.completeopt = 'menuone,noinsert'
 o.guifont='Fira\\ Code, Cascadia Code, FiraCode, Nerd Font'
@@ -43,9 +44,13 @@ bo.fileencoding= 'utf-8'
 
 ------- Commands ------- 
 
+vim.cmd('set ts=4')                           --Insert 2 spaces for a tab
+vim.cmd('set sw=4')                        --Change the number of space characters inserted for indentation
+
 -- corlorscheme
 vim.cmd('let g:nvcode_termcolors=256')
-vim.cmd('colorscheme nightfly');
+vim.cmd('colorscheme nvcode');
+
 
 -- highlight the current cursor line
 vim.api.nvim_exec([[

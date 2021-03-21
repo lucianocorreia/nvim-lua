@@ -14,8 +14,6 @@ return require('packer').startup(function()
 
 	use 'christianchiarulli/nvcode-color-schemes.vim'
     use 'norcalli/nvim-colorizer.lua'
-	use 'bluz71/vim-nightfly-guicolors'
-	use 'sainnhe/sonokai'
 
 	use 'windwp/nvim-autopairs'
     use 'kyazdani42/nvim-web-devicons' -- icons 

@@ -13,6 +13,7 @@ require('nv-autopairs')
 require('nv-telescope')
 require('nv-lualine')
 require('nv-kommentary')
+require('nv-closetag')
 -- require('nv-lightbulb')
 
 -- LSP
