@@ -4,7 +4,6 @@ require('keybindings')
 require('settings')
 
 -- Plugins
-require('nv-compe')
 require('nv-colorizer')
 require('nv-bufferline')
 require('nv-nvimtree')
@@ -16,8 +15,9 @@ require('nv-lualine')
 require('nv-kommentary')
 
 -- LSP
-require('nv-lspconfig')
+require('nv-compe')
 -- require('nv-completion')
---[[ require('lsp.ts-server')
-require('lsp.go-gopls') ]]
+require('nv-lspconfig')
+require('lsp.ts-server')
+require('lsp.go-gopls')
 

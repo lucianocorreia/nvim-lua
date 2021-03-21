@@ -51,3 +51,11 @@ vim.cmd('colorscheme nvcode');
 vim.api.nvim_exec([[
 	au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
 ]], false)
+
+
+vim.fn.sign_define("LspDiagnosticsSignError", { textml = "LspDiagnosticsSignError", text = "✘", numhl = "LspDiagnosticsSignError" })
+vim.fn.sign_define("LspDiagnosticsSignWarning", { textml = "LspDiagnosticsSignWarning", text = "ℹ", numhl = "LspDiagnosticsSignWarning" })
+vim.fn.sign_define("LspDiagnosticsSignInformation", { textml = "LspDiagnosticsSignInformation", text = "ℹ", numhl = "LspDiagnosticsSignInformation" })
+vim.fn.sign_define("LspDiagnosticsSignHint", { textml = "LspDiagnosticsSignHint", text = "➤", numhl = "LspDiagnosticsSignHint" })
+
+

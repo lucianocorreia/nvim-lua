@@ -1,7 +1,7 @@
-local lspconfig = require'lspconfig'
+local nvim_lsp = require('lspconfig')
 
-lspconfig.gopls.setup{
-	cmd = {"gopls", "serve"},
+nvim_lsp.gopls.setup{
+	cmd = {"gopls"},
     settings = {
       gopls = {
         analyses = {
@@ -11,7 +11,8 @@ lspconfig.gopls.setup{
       },
     },
 	filetypes = { "go", "gomod" },
-  	root_dir = lspconfig.util.root_pattern('go.mod', '.git'),
+  	root_dir = nvim_lsp.util.root_pattern('go.mod', '.git'),
+	on_attach = require'nv-lspconfig'.on_attach,
 }
 
 function goimports(timeoutms)
@@ -44,7 +45,12 @@ function goimports(timeoutms)
 	end
 end
 
+-- autocmd BufWritePre *.go  call execute('LspDocumentFormatSync') | call execute('LspCodeActionSync source.organizeImports')
+
 vim.api.nvim_command([[
-autocmd BufWritePre *.go lua goimports(1000)
+	autocmd BufWritePre *.go lua goimports(1000)
 ]])
 
+--vim.api.nvim_command([[
+--	autocmd BufWritePre *.go lua vim.lsp.buf.formatting()
+--]])
