@@ -56,6 +56,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
+  },
   ["nvcode-color-schemes.vim"] = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
@@ -88,6 +92,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
@@ -105,9 +113,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
+  sonokai = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/sonokai"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["vim-multiple-cursors"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/vim-multiple-cursors"
+  },
+  ["vim-nightfly-guicolors"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors"
   },
   ["vim-startify"] = {
     loaded = true,

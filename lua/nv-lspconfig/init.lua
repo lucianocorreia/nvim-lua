@@ -2,7 +2,7 @@
 vim.fn.sign_define("LspDiagnosticsSignError",
                    {texthl = "LspDiagnosticsSignError", text = "✘", numhl = "LspDiagnosticsSignError"})
 vim.fn.sign_define("LspDiagnosticsSignWarning",
-                   {texthl = "LspDiagnosticsSignWarning", text = "➤", numhl = "LspDiagnosticsSignWarning"})
+                   {texthl = "LspDiagnosticsSignWarning", text = "➜", numhl = "LspDiagnosticsSignWarning"})
 vim.fn.sign_define("LspDiagnosticsSignInformation",
                    {texthl = "LspDiagnosticsSignInformation", text = "ℹ", numhl = "LspDiagnosticsSignInformation"})
 vim.fn.sign_define("LspDiagnosticsSignHint",
@@ -27,11 +27,18 @@ vim.cmd('nnoremap <silent> <C-f> <cmd>lua require(\'lspsaga.action\').smart_scro
 autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 100)
 autocmd BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 100) ]]
--- Java
--- autocmd FileType java nnoremap ca <Cmd>lua require('jdtls').code_action()<CR>
 
 local function documentHighlight(client, bufnr)
     -- Set autocommands conditional on server_capabilities
+	
+	 -- Set some keybinds conditional on server capabilities
+	  if client.resolved_capabilities.document_formatting then
+		buf_set_keymap("n", "<space>ff", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+	  elseif client.resolved_capabilities.document_range_formatting then
+		buf_set_keymap("n", "<space>ff", "<cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
+	  end
+	
+	
     if client.resolved_capabilities.document_highlight then
         vim.api.nvim_exec([[
       hi LspReferenceRead cterm=bold ctermbg=red guibg=#464646

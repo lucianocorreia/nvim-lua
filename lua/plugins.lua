@@ -14,6 +14,8 @@ return require('packer').startup(function()
 
 	use 'christianchiarulli/nvcode-color-schemes.vim'
     use 'norcalli/nvim-colorizer.lua'
+	use 'bluz71/vim-nightfly-guicolors'
+	use 'sainnhe/sonokai'
 
 	use 'windwp/nvim-autopairs'
     use 'kyazdani42/nvim-web-devicons' -- icons 
@@ -29,6 +31,7 @@ return require('packer').startup(function()
 
 	use 'windwp/nvim-ts-autotag'
 	use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
+	use 'terryma/vim-multiple-cursors'
 
 	use 'nvim-lua/completion-nvim'
     use 'hrsh7th/vim-vsnip'
