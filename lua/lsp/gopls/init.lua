@@ -12,7 +12,7 @@ nvim_lsp.gopls.setup{
     },
 	filetypes = { "go", "gomod" },
   	root_dir = nvim_lsp.util.root_pattern('go.mod', '.git'),
-	on_attach = require'nv-lspconfig'.on_attach,
+	on_attach = require'nv-lspconfig'.common_on_attach,
 }
 
 function goimports(timeoutms)

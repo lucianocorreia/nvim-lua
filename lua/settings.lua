@@ -9,12 +9,12 @@ o.hlsearch = false
 o.foldlevelstart = 4 -- auto code folding when openeing new file at level 1
 o.mouse = 'a'
 o.backup = false
-o.writebackup = true
+o.writebackup = false 
 o.swapfile = false
 o.updatetime = 300
 o.shortmess = vim.o.shortmess .. 'c'
 o.completeopt = 'menuone,noinsert'
-o.guifont='Fira Code, Cascadia Code, FiraCode, Nerd Font'
+o.guifont='Fira\\ Code, Cascadia Code, FiraCode, Nerd Font'
 o.cursorline = true
 o.smartcase = true
 o.ignorecase = true
@@ -41,21 +41,20 @@ bo.shiftwidth = 4
 bo.expandtab = true
 bo.fileencoding= 'utf-8'
 
-
 ------- Commands ------- 
 
 -- corlorscheme
 vim.cmd('colorscheme nvcode');
+vim.cmd('let g:nvcode_termcolors=256')
 
 -- highlight the current cursor line
 vim.api.nvim_exec([[
 	au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
 ]], false)
 
-
-vim.fn.sign_define("LspDiagnosticsSignError", { textml = "LspDiagnosticsSignError", text = "✘", numhl = "LspDiagnosticsSignError" })
+--[[ vim.fn.sign_define("LspDiagnosticsSignError", { textml = "LspDiagnosticsSignError", text = "✘", numhl = "LspDiagnosticsSignError" })
 vim.fn.sign_define("LspDiagnosticsSignWarning", { textml = "LspDiagnosticsSignWarning", text = "ℹ", numhl = "LspDiagnosticsSignWarning" })
 vim.fn.sign_define("LspDiagnosticsSignInformation", { textml = "LspDiagnosticsSignInformation", text = "ℹ", numhl = "LspDiagnosticsSignInformation" })
-vim.fn.sign_define("LspDiagnosticsSignHint", { textml = "LspDiagnosticsSignHint", text = "➤", numhl = "LspDiagnosticsSignHint" })
+vim.fn.sign_define("LspDiagnosticsSignHint", { textml = "LspDiagnosticsSignHint", text = "➤", numhl = "LspDiagnosticsSignHint" }) ]]
 
 

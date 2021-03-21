@@ -20,6 +20,16 @@ return require('packer').startup(function()
     use 'kyazdani42/nvim-tree.lua' -- tree
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/nvim-compe'
+    use 'glepnir/lspsaga.nvim'
+    use 'onsails/lspkind-nvim'
+
+	-- use 'kosayoda/nvim-lightbulb'
+    use 'golang/vscode-go'
+    use 'rust-lang/vscode-rust'
+
+	use 'windwp/nvim-ts-autotag'
+	use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
+
 	use 'nvim-lua/completion-nvim'
     use 'hrsh7th/vim-vsnip'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }

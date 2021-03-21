@@ -1,6 +1,7 @@
 local nvim_lsp = require('lspconfig')
 
 require'lspconfig'.jsonls.setup {
+	on_attach = require'nv-lspconfig'.on_attach,
     commands = {
       Format = {
         function()
