@@ -23,21 +23,11 @@ vim.cmd('nnoremap <silent> <C-f> <cmd>lua require(\'lspsaga.action\').smart_scro
 -- vim.cmd('nnoremap <silent> <C-b> <cmd>lua require(\'lspsaga.action\').smart_scroll_with_saga(-1)<CR>')
 -- vim.cmd('command! -nargs=0 LspVirtualTextToggle lua require("lsp/virtual_text").toggle()')
 
---[[ " autoformat
-autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 100)
-autocmd BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 100)
-autocmd BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 100) ]]
+vim.cmd('nnoremap <silent> <space>ff <cmd>lua vim.lsp.buf.formatting()<CR>')
+vim.cmd('nnoremap <silent> <space>fm <cmd>lua vim.lsp.buf.range_formatting()<CR>')
 
 local function documentHighlight(client, bufnr)
     -- Set autocommands conditional on server_capabilities
-	
-	 -- Set some keybinds conditional on server capabilities
-	  if client.resolved_capabilities.document_formatting then
-		buf_set_keymap("n", "<space>ff", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
-	  elseif client.resolved_capabilities.document_range_formatting then
-		buf_set_keymap("n", "<space>ff", "<cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
-	  end
-	
 	
     if client.resolved_capabilities.document_highlight then
         vim.api.nvim_exec([[
@@ -62,7 +52,7 @@ end
 
 function lsp_config.tsserver_on_attach(client, bufnr)
     lsp_config.common_on_attach(client, bufnr)
-    client.resolved_capabilities.document_formatting = false
+    client.resolved_capabilities.document_formatting = true 
 end
 
 -- Use a loop to conveniently both setup defined servers

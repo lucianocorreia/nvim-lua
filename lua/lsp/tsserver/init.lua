@@ -11,5 +11,5 @@ require'lspconfig'.tsserver.setup {
     on_attach = require'nv-lspconfig'.tsserver_on_attach,
     -- This makes sure tsserver is not used for formatting (I prefer prettier)
     -- on_attach = require'lsp'.common_on_attach,
-    settings = {documentFormatting = false}
+    settings = {documentFormatting = true}
 }

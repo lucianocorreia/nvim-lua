@@ -30,6 +30,7 @@ function goimports(timeoutms)
 	if not actions then return end
 	local action = actions[1]
 
+
 	-- textDocument/codeAction can return either Command[] or CodeAction[]. If it
 	-- is a CodeAction, it can have either an edit, a command or both. Edits
 	-- should be executed first.
