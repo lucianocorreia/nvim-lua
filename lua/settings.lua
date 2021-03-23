@@ -49,6 +49,7 @@ vim.cmd('set sw=4')                        --Change the number of space characte
 
 -- corlorscheme
 vim.cmd('let g:nvcode_termcolors=256')
+vim.cmd('let g:gruvbox_bold=0')
 vim.cmd('colorscheme gruvbox');
 
 
