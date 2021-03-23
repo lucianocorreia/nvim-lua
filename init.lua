@@ -14,6 +14,7 @@ require('nv-telescope')
 require('nv-lualine')
 require('nv-kommentary')
 require('nv-closetag')
+require('nv-snippets')
 -- require('nv-lightbulb')
 
 -- LSP

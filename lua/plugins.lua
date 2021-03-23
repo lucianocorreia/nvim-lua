@@ -13,6 +13,7 @@ return require('packer').startup(function()
     use { 'wbthomason/packer.nvim', opt = true }
 
 	use 'christianchiarulli/nvcode-color-schemes.vim'
+	use 'gruvbox-community/gruvbox'
     use 'norcalli/nvim-colorizer.lua'
 
 	use 'windwp/nvim-autopairs'
@@ -26,6 +27,8 @@ return require('packer').startup(function()
 	-- use 'kosayoda/nvim-lightbulb'
     use 'golang/vscode-go'
     use 'rust-lang/vscode-rust'
+
+	use 'norcalli/snippets.nvim'
 
 	use 'windwp/nvim-ts-autotag'
 	use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}

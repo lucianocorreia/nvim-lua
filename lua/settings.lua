@@ -49,7 +49,7 @@ vim.cmd('set sw=4')                        --Change the number of space characte
 
 -- corlorscheme
 vim.cmd('let g:nvcode_termcolors=256')
-vim.cmd('colorscheme nvcode');
+vim.cmd('colorscheme gruvbox');
 
 
 -- highlight the current cursor line
