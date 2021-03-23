@@ -13,6 +13,7 @@ return require('packer').startup(function()
     use { 'wbthomason/packer.nvim', opt = true }
 
 	use 'gruvbox-community/gruvbox'
+	use 'NLKNguyen/papercolor-theme'
     use 'norcalli/nvim-colorizer.lua'
 
 	use 'windwp/nvim-autopairs'

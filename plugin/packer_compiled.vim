@@ -105,6 +105,10 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/opt/packer.nvim"
   },
+  ["papercolor-theme"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/papercolor-theme"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/plenary.nvim"
