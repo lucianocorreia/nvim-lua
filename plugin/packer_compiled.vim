@@ -64,6 +64,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
   },
+  ["nvcode-color-schemes.vim"] = {
+    loaded = true,
+    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
@@ -104,10 +108,6 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/opt/packer.nvim"
-  },
-  ["papercolor-theme"] = {
-    loaded = true,
-    path = "/Users/lucianocorreia/.local/share/nvim/site/pack/packer/start/papercolor-theme"
   },
   ["plenary.nvim"] = {
     loaded = true,
