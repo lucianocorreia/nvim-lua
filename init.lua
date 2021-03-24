@@ -18,7 +18,7 @@ require('nv-snippets')
 -- require('nv-lightbulb')
 
 -- LSP
-require('nv-compe')
+-- require('nv-compe') -- usando o completion agora
 -- require('nv-completion')
 require('nv-lspconfig')
 require('lsp.efmls')

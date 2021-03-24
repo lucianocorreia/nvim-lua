@@ -12,15 +12,17 @@ return require('packer').startup(function()
     -- Packer can manage itself as an optional plugin
     use { 'wbthomason/packer.nvim', opt = true }
 
-	use 'christianchiarulli/nvcode-color-schemes.vim'
+	-- use 'christianchiarulli/nvcode-color-schemes.vim'
 	use 'gruvbox-community/gruvbox'
+	use 'sainnhe/edge'
     use 'norcalli/nvim-colorizer.lua'
 
 	use 'windwp/nvim-autopairs'
     use 'kyazdani42/nvim-web-devicons' -- icons 
     use 'kyazdani42/nvim-tree.lua' -- tree
     use 'neovim/nvim-lspconfig'
-    use 'hrsh7th/nvim-compe'
+    -- use 'hrsh7th/nvim-compe'
+	use 'nvim-lua/completion-nvim'
     use 'glepnir/lspsaga.nvim'
     use 'onsails/lspkind-nvim'
 
@@ -34,7 +36,6 @@ return require('packer').startup(function()
 	use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
 	use 'terryma/vim-multiple-cursors'
 
-	use 'nvim-lua/completion-nvim'
     use 'hrsh7th/vim-vsnip'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 	use { 'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons' }
