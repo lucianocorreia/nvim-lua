@@ -12,9 +12,8 @@ return require('packer').startup(function()
     -- Packer can manage itself as an optional plugin
     use { 'wbthomason/packer.nvim', opt = true }
 
-	-- use 'christianchiarulli/nvcode-color-schemes.vim'
+	use 'christianchiarulli/nvcode-color-schemes.vim'
 	use 'gruvbox-community/gruvbox'
-	use 'sainnhe/edge'
     use 'norcalli/nvim-colorizer.lua'
 
 	use 'windwp/nvim-autopairs'
